@@ -1,5 +1,5 @@
 package com.objectorientedprogramming;
-public class  Add {
+public class  Add{
     int a ;
     int b ;
     int sum = 0 ;
