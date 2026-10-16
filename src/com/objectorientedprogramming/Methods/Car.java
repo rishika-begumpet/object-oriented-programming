@@ -1,4 +1,4 @@
-package com.objectorientedprogramming;
+package com.objectorientedprogramming.Methods;
 public class Car {
     int price ;
     String model;
