@@ -1,33 +1,15 @@
 package com.objectorientedprogramming.Methods;
-
-import java.util.Scanner;
-
 public class Customer {
-    int id;
-    String address;
-    String name;
-    long phone;
-    char gender;
-
+    public void CustomerDetails(String name, int id, String address, long phone, char gender) {
+        System.out.println( "Name : " + name + " ID : " +  id + " Address : "  + address + " PH.No : " +   phone + " Gender : " +  gender);
+        System.out.println( "----------------------------------------------------------------------------------------");
+    }
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        Customer customer = new Customer();
-        for (int i = 1; i < 10; i++) {
-            System.out.print("Enter ID: ");
-            customer.id = sc.nextInt();
-            System.out.print("Enter Address: ");
-            customer.address = sc.next();
-            System.out.print("Enter Name: ");
-            customer.name = sc.next();
-            System.out.print("Enter Phone Number: ");
-            customer.phone = sc.nextLong();
-            System.out.print("Enter Gender: ");
-            customer.gender = sc.next().charAt(0);
-            System.out.println("Id : " + customer.id);
-            System.out.println("Name: " + customer.name);
-            System.out.println("Address : " + customer.address);
-            System.out.println("PhoneNo: " + customer.phone);
-            System.out.println("Gender: " + customer.gender);
-        }
+        Customer customer1 = new Customer();
+        Customer customer2 = new Customer();
+        Customer customer3 = new Customer();
+        customer1.CustomerDetails("Rishi", 64, "Hyderabad", 8451254545L, 'M');
+        customer2.CustomerDetails("Isha", 85, "KPHB", 45841121L, 'F');
+        customer3.CustomerDetails("Bhavya", 96, "Miyapur", 454857221L, 'F');
     }
 }
