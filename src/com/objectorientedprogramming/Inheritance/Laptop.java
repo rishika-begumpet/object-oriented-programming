@@ -1,6 +1,6 @@
 package com.objectorientedprogramming.Inheritance;
 
-public  class  Laptop extends Product{
+public class Laptop extends Product {
     int hardDiskSize;
     String operatingSystem;
     String screenSize;
@@ -13,11 +13,12 @@ public  class  Laptop extends Product{
         this.screenSize = screenSize;
         this.touchpadPresent = touchpadPresent;
     }
-         public  void displayLaptopDetails(){
-          System.out.println("HardDisk : " + hardDiskSize );
-          System.out.println("Operating System : " + operatingSystem);
-          System.out.println("Screen Size : " + screenSize);
-          System.out.println("TouchPad Present : " + touchpadPresent);
-          System.out.println("=====================================================");
-        }
+
+    public void displayLaptopDetails() {
+        System.out.println("HardDisk : " + hardDiskSize);
+        System.out.println("Operating System : " + operatingSystem);
+        System.out.println("Screen Size : " + screenSize);
+        System.out.println("TouchPad Present : " + touchpadPresent);
+        System.out.println("=====================================================");
+    }
 }

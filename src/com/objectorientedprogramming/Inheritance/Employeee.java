@@ -23,4 +23,5 @@ public class Employeee {
       public double  calculateSalary(){
         return basicSalary - tax;
      }
+
 }

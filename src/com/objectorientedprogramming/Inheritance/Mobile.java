@@ -14,10 +14,10 @@ public class Mobile extends Product {
         this.callCapability = callCapability;
     }
 
-    public void displayMobile(){
+    public void displayMobile() {
         System.out.println("Battery Capacity : " + batteryCapacity);
-        System.out.println("SimCard Count " + simCardCount );
-        System.out.println("IMEI Number : " + imeiNumber );
+        System.out.println("SimCard Count " + simCardCount);
+        System.out.println("IMEI Number : " + imeiNumber);
         System.out.println("Call Capability : " + callCapability);
         System.out.println("=====================================================");
     }

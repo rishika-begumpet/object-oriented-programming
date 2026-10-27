@@ -28,4 +28,5 @@ public class ProductSuperClass {
         System.out.println("Discount Amount : " + calculateDiscount());
         System.out.println("Final Price : " + getFinalPrice());
     }
+
 }

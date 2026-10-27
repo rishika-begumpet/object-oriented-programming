@@ -1,5 +1,6 @@
 package com.objectorientedprogramming.Inheritance;
-public class LaptopProduct extends ElectronicProduct{
+
+public class LaptopProduct extends ElectronicProduct {
     int ramMemory;
     int storageSize;
     String operatingSystem;
@@ -10,20 +11,20 @@ public class LaptopProduct extends ElectronicProduct{
         this.storageSize = storageSize;
         this.operatingSystem = operatingSystem;
     }
-    public void getProductDetails(){
+
+    public void getProductDetails() {
         getDetails();
-        System.out.println("Ram Memory : "+ ramMemory);
-        System.out.println("Storage Size : "+ storageSize);
+        System.out.println("Ram Memory : " + ramMemory);
+        System.out.println("Storage Size : " + storageSize);
         System.out.println("Operating System : " + operatingSystem);
     }
-    double calculateUpgradeCost(){
-        if(ramMemory <= 8){
+
+    double calculateUpgradeCost() {
+        if (ramMemory <= 8) {
             return price + 4000;
-        }
-        else if(ramMemory == 8 && ramMemory <= 15){
+        } else if (ramMemory == 8 && ramMemory <= 15) {
             return price + 2000;
-        }
-        else{
+        } else {
             return price;
         }
     }

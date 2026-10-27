@@ -47,4 +47,5 @@ public class Product {
       public  int getFinalPrice(){
             return price - price*discountPercentage / 100 ;
         }
+
 }
